@@ -14,3 +14,7 @@ html, body{
     height: 100px;
     background-color: #ab1111;
 }
+
+h1{
+    color: blue;
+}
