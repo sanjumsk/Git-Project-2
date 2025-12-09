@@ -7,13 +7,10 @@
 html, body{
     height: 100%;
     background: linear-gradient(#c200e9 , #0905de);
+    padding: 10px;
 }
 
-/* #main{
-    width: 100px;
-    height: 100px;
-    background-color: #ab1111;
-} */
+
 
 h1{
     color: rgb(0, 25, 186);
@@ -39,4 +36,28 @@ p{
     text-align: center;
     margin: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+#nav{
+    display: flex;
+    justify-content:space-between;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+#tabs{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 15px;
+}
+
+.heading{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
 }
