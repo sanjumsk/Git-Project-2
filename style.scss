@@ -226,6 +226,17 @@
       align-self: center;
       margin-top: 20px;
     }
+
+    .tags{
+      margin-top: 2em;
+      h1{
+          color: #ffffff;
+          font-size: 1em;
+          text-align: center;
+        }
+    }
+
+  
   
   @media(max-width: 768px) {
       height:auto;

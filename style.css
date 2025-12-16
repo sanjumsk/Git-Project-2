@@ -184,6 +184,14 @@ body {
   align-self: center;
   margin-top: 20px;
 }
+#center .tags {
+  margin-top: 2em;
+}
+#center .tags h1 {
+  color: #ffffff;
+  font-size: 1em;
+  text-align: center;
+}
 @media (max-width: 768px) {
   #center {
     height: auto;
