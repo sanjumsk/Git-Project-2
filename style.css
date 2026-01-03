@@ -1,26 +1,26 @@
 @font-face {
   font-family: Sher;
-  src: url("./NeueMachina-Regular_DQCmjH1st.ttf");
+  src: url("Fonts/NeueMachina-Regular_DQCmjH1st.ttf");
 }
 @font-face {
   font-family: juana;
-  src: url("./Fontspring-DEMO-juana-extralightit_toKzXEsfr (1).ttf");
+  src: url("Fonts/Fontspring-DEMO-juana-extralightit_toKzXEsfr (1).ttf");
 }
 @font-face {
   font-family: Helvet-EB;
-  src: url("./HelveticaNowDisplay-ExtraBold_Qqt_sGOvuc_Z0ZOJEQucI.woff2");
+  src: url("Fonts/HelveticaNowDisplay-ExtraBold_Qqt_sGOvuc_Z0ZOJEQucI.woff2");
 }
 @font-face {
   font-family: Helvet-R;
-  src: url("./HelveticaNowDisplay-Regular_5Mzhp8KlA8_CAVTbnsPOM.woff2");
+  src: url("Fonts/HelveticaNowDisplay-Regular_5Mzhp8KlA8_CAVTbnsPOM.woff2");
 }
 @font-face {
   font-family: Helvet-M;
-  src: url("./HelveticaNowDisplay-Medium_2wEhlmo-TD_wsqqEEwmJC.woff2");
+  src: url("Fonts/HelveticaNowDisplay-Medium_2wEhlmo-TD_wsqqEEwmJC.woff2");
 }
 @font-face {
   font-family: Helvet-L;
-  src: url("./HelveticaNowDisplay-Light_M4nzWhve6k_k7HolyzL10.woff2");
+  src: url("Fonts/HelveticaNowDisplay-Light_M4nzWhve6k_k7HolyzL10.woff2");
 }
 * {
   margin: 0;
@@ -92,9 +92,9 @@ body {
 }
 #nav #tabs {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 7em;
+  gap: 5rem;
+  font-family: Helvet-L;
 }
 #nav #tabs .heading {
   color: rgb(255, 255, 255);
@@ -177,12 +177,12 @@ body {
   background-color: #24cfa6;
   color: rgb(0, 0, 0);
   font-size: 1.8em;
-  padding: 0.5em 1em;
+  padding: 0.3em 1em;
   border: none;
   border-radius: 0.5em;
   cursor: pointer;
   align-self: center;
-  margin-top: 20px;
+  margin-top: 5rem;
 }
 #center .tags {
   margin-top: 2em;
