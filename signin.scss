@@ -50,7 +50,7 @@ html,body{
 }
 
 
- // NAV BAR
+  // NAV BAR
   #nav {
     display: flex;
     justify-content: space-between;
@@ -99,11 +99,9 @@ html,body{
       // TABS AREA
     #tabs {
       display: flex;
-      justify-content: center;
       align-items: center;
-      gap: 7em;
-      
-      
+      gap: 5rem;
+      font-family: Helvet-L; 
       
       .heading {
         color: rgb(255, 255, 255);
@@ -179,8 +177,12 @@ html,body{
 #center{
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 50%;
   transform: translate(-50% , -50%);
+  
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 
   h1{
     font-size: 5rem;
@@ -190,8 +192,67 @@ html,body{
     text-align: center;
   }
 
-  .label{
-    color: rgb(255, 255, 255);
+
+  .inbox{
+    width: 20rem;
+
+    position: relative;
+    font-size: 0.8rem;
     font-family: Helvet-L;
+    font-weight: 500;
+
+    input{
+      width: 100%;
+      font-size: 1rem;
+      color: #000000;
+      background-color: #ffffff;
+      padding: 0.5rem;
+      border: 1px solid #24cfa6;
+      border-radius: 0.3rem;
+      outline: none ;
+      
+    }
+    
+    label{
+      color: rgba(60, 57, 57, 0.278);
+      
+      position: absolute;
+      left: 0.5rem;
+      top: 30%;
+      pointer-events: none;
+      transition: 0.4s ease;
+    }
+    
+
+    input:focus + label,
+    input:valid + label{
+      // position: absolute;
+      top: -40%;
+      color: #000000;
+      background-color: rgb(17, 203, 126);
+      border-radius: 0.9rem;
+      padding: 0.2rem 0.9rem;
+    }
+    
+    input:focus{
+      box-shadow: 0 0 8px rgb(2, 255, 133);
+
+    }
   }
+
+  button{
+    padding: 0.4rem 0;
+    background-color: #24cfa6;
+    color: #f2f2f2;
+    // border: 0.01rem solid #f2f2f2;
+    border-radius: 0.4rem;
+    outline: none;
+  }
+
+  button:hover{
+    scale: 0.99;
+    // box-shadow: 0 0 5px rgb(0, 255, 4);
+  }
+  
+
 }

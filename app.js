@@ -18,6 +18,7 @@ document.addEventListener("wheel", function(event){
     }
 });
 
+//--------------------Show All Student card---------------
 
 let arr = [{
     Pic:"",
@@ -99,9 +100,18 @@ let view2 = document.querySelector('#view2')
 let body = document.querySelector('body')
 view2.innerHTML = sum;
 
+//----------------- Goto All Student page---------------
 
 var btn = document.getElementById('btnstu')
 
 btn.addEventListener("click", function () {
     window.open("stu.html", "_blank");
 });
+
+//--------------------Goto sign in page---------------
+
+let BSignIn = document.getElementById("btnsignin")
+
+BSignIn.addEventListener('click',()=>{
+    window.open("sign.html")
+})

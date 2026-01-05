@@ -1,3 +1,5 @@
+//-------------------All Student Details and Show Cards ---------------
+
 let arr = [
   { imgsrc: "stu1.png",  Name: "Amit",     Course: "CCC",  Batch: "10 AM" },
   { imgsrc: "stu1.png",  Name: "Ravi",     Course: "CCC",  Batch: "10 AM" },
@@ -48,10 +50,16 @@ arr.forEach(function(elem,index){
     </div> `
 })
 
-let main = document.getElementById('main')
-main.innerHTML = sum;
+let center = document.getElementById('center')
+center.innerHTML = sum;
 
+//--------------------Goto sign in page---------------
 
+let BSignIn = document.getElementById("btnsignin")
+
+BSignIn.addEventListener('click',()=>{
+    window.open("sign.html")
+})
 
 
 
