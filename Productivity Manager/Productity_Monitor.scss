@@ -1,0 +1,351 @@
+:root{
+    --pri:#Fcdec0;
+    --pri2:#efe7e0;
+    --sec:#4e1f00;
+    --sec2:#693d20;
+    --tri1:#feba17;
+    --tri2:#b4846c;
+}
+
+
+@font-face {
+    font-family: aeonik;
+    font-weight: 200;
+    src: url(Fonts/AeonikTRIAL-Light.otf);
+}
+
+@font-face {
+    font-family: aeonik;
+    font-weight: 500;
+    src: url(Fonts/AeonikTRIAL-Regular.otf);
+}
+@font-face {
+    font-family: aeonik;
+    font-weight: 700;
+    src: url(Fonts/AeonikTRIAL-Bold.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color:var(--sec);
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    color: var(--pri);
+    
+}
+
+nav{
+    width: 100%;
+    height: 6rem;
+    background-color:var(--tri2);
+    padding: 1rem;
+    position: relative;
+
+    .Home{
+        background-color:var(--tri1);
+        width: 5rem;
+        
+    }
+}
+
+section.Allelem{
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+
+    .elem{
+        width: 19rem;
+        height: 25rem;
+
+        background-color:var(--tri1);
+        border-radius: 1rem;
+        margin-top:1rem;
+        overflow: hidden;
+        font-size: 2rem;
+        font-family: aeonik;
+        font-weight: 700;
+        
+        // display: flex;
+        transition: 
+            scale 0.3s ease;
+
+        position: relative;
+
+
+        img{
+            height: 100%;
+            width: 100%;
+        
+        }
+
+        p{
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+        }
+    }
+
+    .elem:hover{
+        scale: 0.97;
+    }
+
+
+}
+
+#pages{
+    font-family:aeonik;
+
+    .Fullelem{
+        height: 100%;
+        width: 100%;
+        background-color: var(--sec);
+        padding: 2rem;
+        font-size: 3rem;
+        display: none;
+
+        position: absolute;
+        top: 0%;
+    }
+
+    .back{
+        padding: 0.3rem 0.5rem;
+        background-color: #eb0808;
+        font-size: aeonik;
+        font-weight: 700;
+
+        color: #fff;
+        border: none;
+        border-radius: 11px;
+
+        position: absolute;
+        right: 3%;
+
+            transition: 
+            transform 01s ease,
+            box-shadow 01s ease,
+
+
+    }
+
+    .back:hover{
+        transform: translate(0, -5%);
+    }
+
+    .back:active{
+        transform: translate(0,0);
+    }
+
+
+    .todo-list-fullpage{
+        width: 100%;
+        // display: block;
+
+        h1{
+            font-size: 3rem;
+        }
+
+
+        .task-container{
+            height: 80%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            
+
+            .addtask{
+                width: 33%;
+                background-color: var(--sec2);
+                color: var(--sec);
+                padding: 1.5rem;
+                border-radius: 1rem;
+                // font-family: Arial, Helvetica, sans-serif;
+
+
+                form{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                }
+
+                input{
+                    background-color: var(--pri2);
+                    // border: 1px solid black;
+                    border: none;
+                    padding: 0.8rem 1rem;
+                    border-radius: 0.4rem;
+                    font-size: 1.5rem;
+                    font-family: Arial, Helvetica, sans-serif;
+                    outline: none;
+                }
+
+                textarea{
+                    background-color:var(--pri2);
+                    height: 20rem;
+                    border: none;
+                    padding: 0.5rem 1rem;
+                    border-radius: 0.3rem;
+                    outline: none;
+                    font-size: 1.5rem;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+                button{
+                    background-color:var(--tri1);
+                    border: none;
+                    padding: 0.7rem 1rem;
+                    border-radius: 0.3rem;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    color: white;
+
+                    transition: scale 0.3s;
+                }
+
+                button:active{
+                    scale: 0.99;
+                }
+
+                .check-imp{
+                    // background-color: red;
+
+                    input{
+                        height: 20px;
+                        width: 20px;
+                    }
+
+                    label{
+                        font-size: 1.5rem;
+                        color: var(--pri2);
+                        cursor: pointer;
+                    }
+                }
+                
+            }
+
+            .alltask{
+                width: 65%;
+                background-color:var(--sec2);
+                border-radius: 1rem;
+                padding: 2rem;
+                overflow: auto;
+
+                .task{
+                    background-color: var(--pri2);
+                    border-radius: 0.5rem;
+                    padding: 0.8rem 2rem;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 1.5rem;
+
+
+                    h1{
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        color: var(--sec);
+                    }
+
+                    h1 span{
+                        background-color:red;
+                        border-radius: 1rem;
+                        font-size: 1rem;
+                        padding: 0.1rem 0.5rem;
+                    }
+
+                    h1 span.true{
+                        opacity: 1;
+                    }
+
+                    h1 span.false{
+                        opacity: 0;
+                    }
+
+                    button{
+                        background-color: green;
+                        color: white;
+                        padding: 0.5rem 1rem;
+                        border: none;
+                        border-radius: 0.5rem;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .daily-planner-fullpage{
+        // display: block;
+        // height: 100%;
+
+
+        h1{
+            font-size: 3rem;
+        }
+
+        .daily-plan {
+            height: 87%;
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            background-color: var(--sec2);
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid var(--tri1);
+            overflow: auto;
+
+            .planner-time {
+                background-color: var(--sec);
+                padding: 1rem;
+                border-radius: 1rem;
+                width: clamp(1rem,49%,100%);
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 100;
+                // border: 0.5px solid var(--tri1);
+                overflow: hidden;
+
+                
+                h2 {
+                    font-size: 0.7rem;
+                    color: var(--tri1);
+                }
+
+                input {
+                    font-size: 1.8rem;
+                    padding: 0.3rem;
+                    background-color: var(--sec);
+                    outline: none;
+                    border: none;
+                    color: var(--pri);
+                }
+            }
+
+            .planner-time:active {
+                border: 1px solid var(--tri2);
+            }
+        }
+
+
+    }
+}
+
+
+
+
+
+
+

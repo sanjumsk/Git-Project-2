@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productvity Monitor</title>
+    <link rel="stylesheet" href="Productity_Monitor.css">
+</head>
+<body>
+    <div id="main">
+        <nav>
+            <a href="../index.html">
+                <div class="Home">
+                    <p>Home</p>
+                </div>
+            </a>
+        </nav>
+        <section class="Allelem">
+            <div class="todo elem" id="0">
+                <img src="Image/img1.png" alt="Image not found">
+                <p>To Do List</p>
+            </div>
+            <div class="daily elem" id="1">
+                <img src="Image/img2.png" alt="Image not found">
+                <p>Daily Planner</p>
+            </div>
+            <div class="moti elem" id="2">
+                <img src="Image/img3.png" alt="Image not found">
+                <p>Motivation</p>
+            </div>
+            <div class="promo elem" id="3">
+                <img src="Image/img4.png" alt="Image not found">
+                <p>Pomodoro Timer</p>
+            </div>
+            <div class="goals elem" id="4">
+                <img src="Image/img5.png" alt="Image not found">
+                <p>Daily Goals</p>
+            </div>
+        </section>
+
+        <div id="pages">
+            <section class="Fullelem todo-list-fullpage">
+                <button class="back" id="0">Close</button>
+                <h1>Your Personalised Task List</h1>
+                <div class="task-container">
+                    <div class="addtask">
+                        <form>
+                            <!-- <h5>Add Task</h5> -->
+                            <input type="text" placeholder="Enter a Task" class="T-in" required>
+                            <textarea placeholder="Task Details" class="T-in" required></textarea>
+                                <div class="check-imp">
+                                    <input type="checkbox" id="check">
+                                    <label for="check">Mark as Important!</label>
+                                </div>
+                            
+                            <button>Add Task</button>
+                        </form>
+                    </div> 
+                    <div class="alltask">
+                        <!-- <div class="task">
+                            <h1>Go to School <span class="false">imp</span></h1>
+                            <button>Mark as Completed</button>
+                        </div>
+                       
+                        <div class="task">
+                            <h1>Go to School</h1>
+                            <button>Mark as Completed</button>
+                        </div> -->
+                    </div>
+                </div> 
+            </section>
+
+            <section class="Fullelem daily-planner-fullpage">
+                <button class="back" id="1">Close</button>
+                <h1>Daily Planner</h1>
+                <div class="daily-plan">
+
+                    <div class="planner-time">
+                            <h2>6:00 - 7:00</h2>
+                            <input placeholder="..." class="plan-input"></input>
+                    </div>
+
+                    <div class="planner-time">
+                            <h2>9:00 AM</h2>
+                            <input placeholder="Plan your day..." class="plan-input"></input>
+                    </div>
+
+                    <div class="planner-time">
+                            <h2>9:00 AM</h2>
+                            <input placeholder="Plan your day..." class="plan-input"></input>
+                    </div>
+
+                    <div class="planner-time">
+                            <h2>9:00 AM</h2>
+                            <input placeholder="Plan your day..." class="plan-input"></input>
+                    </div>
+
+                    <div class="planner-time">
+                            <h2>9:00 AM</h2>
+                            <input placeholder="Plan your day..." class="plan-input"></input>
+                    </div>
+
+                    <div class="planner-time">
+                            <h2>9:00 AM</h2>
+                            <input placeholder="Plan your day..." class="plan-input"></input>
+                    </div>
+
+                    <div class="planner-time">
+                            <h2>9:00 AM</h2>
+                            <input placeholder="Plan your day..." class="plan-input"></input>
+                    </div>
+
+                    <div class="planner-time">
+                            <h2>9:00 AM</h2>
+                            <input placeholder="Plan your day..." class="plan-input"></input>
+                    </div>
+
+                    <div class="planner-time">
+                            <h2>9:00 AM</h2>
+                            <input placeholder="Plan your day..." class="plan-input"></input>
+                    </div>
+
+                    <div class="planner-time">
+                            <h2>9:00 AM</h2>
+                            <input placeholder="Plan your day..." class="plan-input"></input>
+                    </div>
+
+                    <div class="planner-time">
+                            <h2>9:00 AM</h2>
+                            <input placeholder="Plan your day..." class="plan-input"></input>
+                    </div>
+
+                    <div class="planner-time">
+                            <h2>9:00 AM</h2>
+                            <input placeholder="Plan your day..." class="plan-input"></input>
+                    </div>
+                </div>
+            </section>
+
+            <section class="Fullelem motivation-fullpage">
+                <button class="back" id="2">Close</button>
+                <h1>Motivation</h1>
+            </section>
+
+            <section class="Fullelem pomodoro-fullpage">
+                <button class="back" id="3">Close</button>
+                <h1>Pomodoro Timer</h1>
+            </section>
+
+            <section class="Fullelem daily-goal-fullpage">
+                <button class="back" id="4">Close</button>
+                <h1>Daily Goals</h1>
+            </section>
+        </div>
+
+    </div>
+    <script src="Productity_Monitor.js"></script>
+</body>
+</html>
