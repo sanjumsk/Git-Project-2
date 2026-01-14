@@ -149,13 +149,53 @@ dailyPlanDiv.innerHTML = Plans;
 ShowHoursLabel();
 
 // Input box me kuch likhne par Array and localstorage me save karne ke liye
-
-let planInputs = document.querySelectorAll('.plan-input');
-let plannerBox = document.querySelectorAll('.planner-time')
-planInputs.forEach((input)=>{
-    input.addEventListener('input',function(){
-        plansArray[input.id] = input.value;
-        localStorage.setItem('plansArray',JSON.stringify(plansArray))
-        // plannerBox[input.id].style.backgroundColor = "Red"
+function SaveInputsToLocalstorage(){
+    let planInputs = document.querySelectorAll('.plan-input');
+    let plannerBox = document.querySelectorAll('.planner-time')
+    planInputs.forEach((input)=>{
+        input.addEventListener('input',function(){
+            plansArray[input.id] = input.value;
+            localStorage.setItem('plansArray',JSON.stringify(plansArray))
+            // plannerBox[input.id].style.backgroundColor = "Red"
+        })
     })
-})
+}
+
+SaveInputsToLocalstorage();
+
+async function GetQuote(){
+    let MotivationQuote = document.querySelector('.quote-card p')
+    let MotivationAuthor = document.querySelector('.quote-card .author h2')
+    
+    let response =await fetch('http://api.quotable.io/random');
+    let data = await response.json()
+    
+    // console.log(data.content);
+    // console.log(data.author);
+
+    MotivationQuote.innerHTML = data.content
+    MotivationAuthor.innerHTML = data.author
+}
+
+GetQuote();
+
+function GetDate_time(){
+    let Day_TimeBox =document.querySelector('.day-time')
+
+    let d = new Date();
+    let day = d.toLocaleDateString("en-US", { weekday: "short" });
+    let month = d.toLocaleDateString("en-US", { month: "long" });
+    let year = d.getFullYear();
+
+    console.log(day , month , year);
+    Day_TimeBox.innerHTML= `<div class="box today">
+                                    <h1>${d.getDate()} <span class="day">${day}</span><br> <span class="month" >${month}</span></h1>
+                                    <h5>${year}</h5>
+                            </div>
+                             <div class="box day-lime">
+                                    <h1>Quote of the Day.</h1>
+                            </div>`
+    
+}
+
+GetDate_time();

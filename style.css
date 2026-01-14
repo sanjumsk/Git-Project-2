@@ -413,7 +413,6 @@ body {
 }
 
 #view5 {
-  height: 100vh;
   padding: 2rem 1rem;
   width: clamp(20rem, 94vw, 160rem);
   position: relative;
@@ -461,4 +460,35 @@ body {
 #view5 .bottom .service:hover {
   scale: 0.95;
   box-shadow: 0 0 100px 1px var(--pri2);
+}
+
+#About-us {
+  background-color: #fff;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#About-us .top {
+  background-color: red;
+  width: clamp(10rem, 94.5vw, 160rem);
+  font-family: Helvet-R;
+}
+#About-us .top img {
+  width: 10rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+#About-us .bottom {
+  background-color: #24cfa6;
+  padding: 1rem;
+  display: grid;
+  display: flex;
+  grid-template-columns: repeat(minmax(23rem, 1fr));
+  gap: 1rem;
+}
+#About-us .bottom .box {
+  width: 10rem;
+  height: 4rem;
+  background-color: green;
 }/*# sourceMappingURL=style.css.map */

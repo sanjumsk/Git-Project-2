@@ -445,8 +445,148 @@ nav{
 
 
     }
-}
 
+    .motivation-fullpage {
+        display: block;
+        height: 100%;
+        padding: 2rem;
+
+        .motivation-main{
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+
+                /* Center wrapper */
+                .wrapper {
+                    position: relative;
+                }
+        
+                /* Card */
+                .quote-card {
+                    position: relative;
+                    width:50rem;
+                    aspect-ratio:2/1;
+                    background: #e6e6e6;
+                    border-radius: 30px;
+                    box-shadow:
+                        inset 6px 6px 12px #a09696,
+                        inset -6px -6px 12px #a09696,
+                        0  0 20rem 20px rgba(255, 179, 0, 0.919);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 2rem;
+                    font-family: juana;
+                    
+                    // box-shadow: 0 0 100px 1px var(--tri1);
+                    @media(max-width:768px){
+                        margin-top: 4rem;
+                        width:80vw;
+                        aspect-ratio:1/2;
+                    }
+
+                    .box{
+                        font-size: 1rem;
+                        color: var(--tri1);
+                        background-color:rgba(255, 179, 0, 0.088);
+                        border-radius: 0.8rem;
+                        padding: 0.5rem 1rem;
+                        border: 1px solid var(--tri1);
+                        font-family: Helvet-R;
+
+                    }
+
+                    .day-time{
+                        position: absolute;
+                        top: 1rem;
+                        width: 85%;
+                        display: flex;
+                        // gap: 3rem;
+                        justify-content: space-between;
+
+                        @media(max-width:768px) {
+                                flex-direction: column;
+                                gap: 0.5rem;
+                            }
+
+                        .today{
+                            display: flex;
+                            line-height: 1.1rem;
+                            gap: 0.5rem;
+
+                            @media(max-width:768px) {
+                                justify-content: space-between;
+                            }
+
+                            h5{
+                                writing-mode: vertical-lr;
+                                font-size: 1.3rem;
+                            }
+
+                            .day{
+                                color: var(--sec);
+                                font-size:1rem;
+                            }
+
+                            .month{
+                                color: var(--sec);
+                                font-size:1.5rem;
+                            }
+                        }
+                    }
+
+                    
+                    .author{
+                        position: absolute;
+                        bottom: 1rem;
+                        right: 3rem;
+                        h2{
+                            color: var(--sec);
+                        }
+                    }
+
+                    p{
+                        text-align: center;
+                        font-size: 2.2rem;
+                        color: var(--sec);
+                    }
+            
+                    /* Quotes */
+                    .quote {
+                        position: absolute;
+                        font-size: 10rem;
+                        color:var(--tri1);
+                        font-weight: bold;
+                        text-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
+                    }
+            
+                    /* Top quote */
+                    .quote.top {
+                        top: -4rem;
+                        left: -2rem;
+                    }
+            
+                    /* Bottom quote */
+                    .quote.bottom {
+                        bottom: -7rem;
+                        right: -2rem;
+                        @media(max-width:768px){
+                            bottom:-9.3rem;
+                        }
+                    }
+                }
+        
+        
+            }
+        }
+
+
+}
 
 
 
