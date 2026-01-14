@@ -1,6 +1,7 @@
 //Colors
 :root {
   --pri: #24cfa6;
+  --pri2: #24cfa777;
   --sec: #171717;
   --tri: #ffffff;
   --text-color: #ffff;
@@ -613,7 +614,7 @@ body {
 
     .service:hover{
       scale: .95;
-      box-shadow: 0 0 20px 1px var(--pri);
+      box-shadow: 0 0 100px 1px var(--pri2);
       // border: 1px solid var(--pri);
     }
 

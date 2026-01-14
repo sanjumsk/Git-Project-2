@@ -145,19 +145,23 @@ function ShowAllStudent(){
     var btn = document.querySelector('.milestone')
 
     btn.addEventListener("click", function () {
-        window.open("stu.html", "_blank");
+        window.location.href= "stu.html";
     });
+}
 
+ShowAllStudent();
+
+function GotoSignIn(){
     //--------------------Goto sign in page---------------
 
     let BSignIn = document.getElementById("btnsignin")
 
     BSignIn.addEventListener('click',()=>{
-        window.open("sign.html")
+        window.location.href ="sign.html"
     })
 }
 
-ShowAllStudent();
+GotoSignIn();
 
 
 //-----------------Course details------------------

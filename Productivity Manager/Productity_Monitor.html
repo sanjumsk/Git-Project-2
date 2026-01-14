@@ -90,7 +90,10 @@
                 <button class="back" id="1">Close</button>
                 <h1>Daily Planner</h1>
                 <div class="daily-plan">
-
+                    <div class="planner-time">
+                            <h2>${6+elem}:00 - ${7+elem}:00</h2>
+                            <input id="${index}" placeholder="..." class="plan-input" value = ${plansArray[index] != undefined ? plansArray[index]:''}></input>
+                    </div>
                 </div>
             </section>
 
