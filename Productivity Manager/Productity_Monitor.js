@@ -323,7 +323,7 @@ function ButtonsClickEvent(){
     })
     
     resetBtn.addEventListener('click',()=>{
-            totalsecond=21
+            totalsecond=Work_inputTime*60
             AddTimer();
     })
 }
